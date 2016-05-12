@@ -1,0 +1,10 @@
+{
+	"compilerOptions": {
+		"declaration": true,
+		"target": "es5",
+		"noImplicitAny": true,
+        "watch": true,
+		"outDir": "dist",
+        "module": "commonjs"
+	}
+}
