@@ -1,0 +1,24 @@
+enum ChartType
+{
+    Unknown,
+    Area,
+    Bar,
+    Bubble,
+    Candlestick,
+    Column,
+    Combo,
+    Diff,
+    Donut,
+    Pie,
+    Gantt,
+    Gauge,
+    Geo,
+    Histogram,
+    Line,
+    Sankey,
+    Scatter,
+    Table,
+    Timelines,
+    Trandline,
+    Waterfall
+}

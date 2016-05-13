@@ -1,0 +1,5 @@
+enum DataType
+{
+    Unknown,
+    Csv
+}

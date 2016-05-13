@@ -1,1 +1,1 @@
-declare function parseCsv(csv: any): any[];
+declare function parseCsv(csv: any): DataTable;
