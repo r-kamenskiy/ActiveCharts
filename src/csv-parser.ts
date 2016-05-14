@@ -18,5 +18,6 @@ function parseCsv(csv): DataTable {
 			dt.Columns[headers[i]].push(rows[i]);
 		}
 	}
+    
     return dt;
 }
