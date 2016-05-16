@@ -3,12 +3,12 @@
 		"declaration": true,
 		"target": "es5",
         "watch": true,
+        "module": "commonjs",
 		"preserveConstEnums": true,
         "out": "dist/active-charts.js"       
 	},
 	"exclude": [
     "node_modules",
-	
     "dist",
     "dist/active-charts.js" 
   ]

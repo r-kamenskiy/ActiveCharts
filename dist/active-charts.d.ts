@@ -1,4 +1,6 @@
-declare function parseCsv(csv: any): DataTable;
+declare module "csv-parser" {
+    export function parseCsv(csv: any): DataTable;
+}
 declare function googleChartEngine(data: any, chartType: any): void;
 declare function renderLineChart(data: any): void;
 declare class Startup {

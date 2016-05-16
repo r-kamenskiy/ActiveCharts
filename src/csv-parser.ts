@@ -1,4 +1,4 @@
-function parseCsv(csv): DataTable {
+export function parseCsv(csv): DataTable {
     
     let lines = csv.split('\n');
 	let headers = lines[0].split(',');
