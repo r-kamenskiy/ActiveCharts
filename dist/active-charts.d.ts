@@ -1,10 +1,24 @@
-declare module "csv-parser" {
+declare module "src/csv-parser" {
     export function parseCsv(csv: any): DataTable;
 }
-declare function googleChartEngine(data: any, chartType: any): void;
-declare function renderLineChart(data: any): void;
-declare class Startup {
-    static main(): number;
+declare module "src/models/dvm" {
+    export class Dvm {
+        chartType: ChartType;
+        dataType: DataType;
+    }
+}
+declare module "src/engines/iChartsEngine" {
+    import { Dvm } from "src/models/dvm";
+    export interface IChartsEngine {
+        render(dvm: Dvm): string;
+    }
+}
+declare module "src/engines/googleChartsEngine" {
+    import { IChartsEngine } from "src/engines/iChartsEngine";
+    import { Dvm } from "src/models/dvm";
+    export class GoogleChartEngine implements IChartsEngine {
+        render(dvm: Dvm): string;
+    }
 }
 declare class DataTable {
     ColumnHeaders: string[];
@@ -38,8 +52,4 @@ declare enum ChartType {
 declare enum DataType {
     Unknown = 0,
     Csv = 1,
-}
-declare class Dvm {
-    chartType: ChartType;
-    dataType: DataType;
 }

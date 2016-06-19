@@ -1,6 +1,4 @@
-class Dvm{
+export class Dvm{
     public chartType: ChartType;
     public dataType: DataType;
-    
-    
 }
