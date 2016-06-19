@@ -7,6 +7,9 @@
 		"preserveConstEnums": true,
         "out": "dist/active-charts.js"       
 	},
+    "files":[
+        "src/*.ts"
+    ],
 	"exclude": [
     "node_modules",
     "dist",

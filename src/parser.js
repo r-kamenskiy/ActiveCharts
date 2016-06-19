@@ -1,3 +1,0 @@
-function render(data, chartEngine) {
-    
-}

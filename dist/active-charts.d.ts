@@ -1,21 +1,21 @@
-declare module "src/csv-parser" {
+declare module "csv-parser" {
     export function parseCsv(csv: any): DataTable;
 }
-declare module "src/models/dvm" {
+declare module "models/dvm" {
     export class Dvm {
         chartType: ChartType;
         dataType: DataType;
     }
 }
-declare module "src/engines/iChartsEngine" {
-    import { Dvm } from "src/models/dvm";
+declare module "engines/iChartsEngine" {
+    import { Dvm } from "models/dvm";
     export interface IChartsEngine {
         render(dvm: Dvm): string;
     }
 }
-declare module "src/engines/googleChartsEngine" {
-    import { IChartsEngine } from "src/engines/iChartsEngine";
-    import { Dvm } from "src/models/dvm";
+declare module "engines/googleChartsEngine" {
+    import { IChartsEngine } from "engines/iChartsEngine";
+    import { Dvm } from "models/dvm";
     export class GoogleChartEngine implements IChartsEngine {
         render(dvm: Dvm): string;
     }
