@@ -4,7 +4,8 @@
   "description": "Js charts library",
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha tests/active-charts.test.js -w"
+    "pretest": "tsc test/active-charts.test.ts --module commonjs",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,6 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "jasmine-core": "2.4.1",
-    "mocha": "^2.4.5"
+    "mocha": "^2.5.3"
   }
 }
